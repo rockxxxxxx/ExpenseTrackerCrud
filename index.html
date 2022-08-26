@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Expense Tracketr</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="head card">Expense Tracker</h1>
+
+      <div class="form">
+        <form>
+          <label for:"Amount">Amount: </label>
+            <input type="text" id="amount" />
+            <label for:"Expense">Expense For: </label>
+            <input type="text" id="expense" />
+            <label for:"category">Category: </label>
+            <select id="cat" name="category">
+                <option value="food">Food</option>
+                <option value="movie">Movie</option>
+                <option value="shopping">Shopping</option>
+                <option value="fuel">Fuel</option>
+              </select>
+          <button tupe="submit" id = "submit" onclick="insertExpense();">Submit</button>
+          <button tupe="submit" id = "edit" >Update</button>
+        </form>
+      </div>
+      <ul id= "data">
+    </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
